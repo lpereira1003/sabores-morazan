@@ -4,12 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sabores de Morazán</title>
-
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<h1>Sabores de Morazán</h1>
+<header class="header">
+  <nav class="navbar">
+    <h1 class="logo">Sabores de Morazán</h1>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h2>Tradición, sabor y turismo en Morazán</h2>
+      <p>
+        Disfruta pupusas, desayunos típicos y platillos salvadoreños
+        preparados con el auténtico sabor oriental.
+      </p>
+      <a href="#reservas" class="btn-primary">Reservar ahora</a>
+    </div>
+  </section>
+
+  <section class="section" id="nosotros">
+    <h2>Nosotros</h2>
+    <p>
+      Sabores de Morazán nace como una propuesta gastronómica para turistas
+      y familias que desean disfrutar comida típica salvadoreña en un ambiente
+      cálido, natural y familiar.
+    </p>
+  </section>
+
+  <section class="section" id="servicios">
+    <h2>Nuestros servicios</h2>
+
+    <div class="cards-container">
+      <article class="card">
+        <h3>Pupusas artesanales</h3>
+        <p>Revueltas, queso, frijol con queso y especialidades de la casa.</p>
+      </article>
+
+      <article class="card">
+        <h3>Desayunos típicos</h3>
+        <p>Huevos, frijoles, plátano, queso, crema y tortillas calientes.</p>
+      </article>
+
+      <article class="card">
+        <h3>Almuerzos familiares</h3>
+        <p>Platillos caseros preparados con ingredientes frescos.</p>
+      </article>
+
+      <article class="card">
+        <h3>Bebidas naturales</h3>
+        <p>Frescos de temporada, café de la zona y bebidas tradicionales.</p>
+      </article>
+
+      <article class="card">
+        <h3>Ambiente turístico</h3>
+        <p>Espacio ideal para visitantes que recorren el oriente del país.</p>
+      </article>
+
+      <article class="card">
+        <h3>Eventos pequeños</h3>
+        <p>Reservas para cumpleaños, reuniones familiares y convivios.</p>
+      </article>
+    </div>
+
+    <button class="btn-secondary" id="destacarBtn">Destacar especialidad</button>
+  </section>
+
+  <section class="section form-section" id="reservas">
+    <h2>Reserva tu mesa</h2>
+
+    <form id="reservaForm" class="form">
+      <input type="text" id="nombre" placeholder="Nombre completo">
+      <input type="email" id="correo" placeholder="Correo electrónico">
+      <input type="tel" id="telefono" placeholder="Teléfono">
+      <input type="date" id="fecha">
+      <input type="number" id="personas" placeholder="Número de personas" min="1">
+      <textarea id="comentario" placeholder="Comentario adicional"></textarea>
+
+      <button type="submit" class="btn-primary">Enviar reserva</button>
+    </form>
+
+    <p id="mensajeForm" class="mensaje"></p>
+  </section>
+</main>
+
+<footer class="footer" id="contacto">
+  <p>Sabores de Morazán © 2026</p>
+  <p>Comida típica salvadoreña | Morazán, El Salvador</p>
+</footer>
 
 <script src="js/script.js"></script>
 </body>
