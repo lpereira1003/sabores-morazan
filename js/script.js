@@ -1,3 +1,4 @@
+/* Copyright (c) 2026 sabores-morazan contributors. Licensed under the MIT License. */
 const menuBtn = document.getElementById("menuBtn");
 const navMenu = document.getElementById("navMenu");
 const destacarBtn = document.getElementById("destacarBtn");

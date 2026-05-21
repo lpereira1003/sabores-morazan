@@ -1,3 +1,4 @@
+/* Copyright (c) 2026 sabores-morazan contributors. Licensed under the MIT License. */
 * {
   margin: 0;
   padding: 0;
@@ -63,8 +64,7 @@ body {
 }
 
 .hero {
-  min-height: 100vh;
-  padding: 7rem 2rem 3rem;
+  padding: 6rem 2rem 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,7 +113,7 @@ body {
 .section {
   max-width: 1100px;
   margin: auto;
-  padding: 5rem 1.5rem;
+  padding: 3rem 1.5rem;
   text-align: center;
 }
 
@@ -126,16 +126,20 @@ body {
 .cards-container {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
 }
 
 .card {
   background-color: #fff;
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
   transition: transform 0.3s, background-color 0.3s;
+  overflow: hidden;
+  max-width: 320px;
+  margin: auto;
 }
 
 .card:hover {
@@ -151,7 +155,13 @@ body {
   background-color: #ffe8b6;
   border: 2px solid #f4a261;
 }
-
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
 .form-section {
   background-color: #fff3d6;
   border-radius: 20px;

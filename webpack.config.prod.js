@@ -1,3 +1,4 @@
+/* Copyright (c) 2026 sabores-morazan contributors. Licensed under the MIT License. */
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
